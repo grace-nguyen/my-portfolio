@@ -163,7 +163,7 @@ const initialState: PortfolioData = {
     name: 'portfolio',
     initialState,
     reducers: {
-        updatePortfolio: (state, action: PayloadAction<PortfolioData>) => {
+        updatePortfolio: (_state, action: PayloadAction<PortfolioData>) => {
             return action.payload;
         }
     }
