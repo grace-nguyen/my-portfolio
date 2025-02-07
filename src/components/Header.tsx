@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
           {/* Desktop CV Button */}
           <a
-            href="https://drive.google.com/file/d/123Itea8e4hOSXbOt_CpEss2WF9nrPDBd/view?usp=sharing"
+            href="https://drive.google.com/file/d/13SzuCXtiknqF1SEAGt-F0-hYl-vw0qpd/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center bg-gradient-to-r from-purple-500 to-yellow-500 text-white font-semibold py-2 px-4 rounded"
