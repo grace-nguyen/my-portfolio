@@ -7,9 +7,9 @@ const About: React.FC = () => {
     const portfolio = useSelector((state: RootState) => state.portfolio);
   return (
     <section id="about" className="pt-50 py-16 min-h-screen"> 
-      <div className="container mx-auto flex items-center">
+      <div className="container mx-auto flex flex-col md:flex-row items-center">
         {/* Avatar */}
-        <div className="w-1/3 flex justify-center">
+        <div className="w-full md:w-1/3 flex justify-center">
           <img
             src="/avatar.jpeg"
             alt="Avatar"
@@ -18,7 +18,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Text About */}
-        <div className="w-2/3 text-white">
+        <div className="w-full md:w-2/3 text-white mt-6 md:mt-0">
           <h2 className="text-3xl font-bold mb-4">Hi, I'm Grace Nguyen</h2>
           <p className="text-gray-300">
             {portfolio.professionalSummary}
@@ -26,9 +26,9 @@ const About: React.FC = () => {
           
         </div>
       </div>
-      <div className="container mx-auto flex items-center">
-        <div className="w-1/3 flex justify-center mt-40"></div>
-        <div className="w-2/3 text-white">
+      <div className="container mx-auto flex flex-col md:flex-row items-center">
+        <div className="w-1/3 flex justify-center mt-10 md:mt-40"></div>
+        <div className="w-full md:w-2/3 text-white">
         <Social />
         </div>
       </div>

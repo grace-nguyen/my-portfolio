@@ -96,6 +96,7 @@ const initialState: PortfolioData = {
           { name: 'TypeScript', icon: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg' },
           { name: 'Bootstrap', icon: 'https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png' },
           { name: 'Tailwind', icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg' },
+          { name: 'PHP', icon: 'https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg' },
           { name: 'C#', icon: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg' },
           { name: 'ASP.NET Core', icon: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg' },
         ],
