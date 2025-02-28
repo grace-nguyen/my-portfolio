@@ -1,6 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
+import { motion } from 'framer-motion';
+import Title from './Title';
 
 const SkillPage: React.FC = () => {
   const skills = useSelector((state: RootState) => state.portfolio.skills);
@@ -9,16 +11,20 @@ const SkillPage: React.FC = () => {
     <section id='skills' className="pt-24 py-16">
       {/* Header */}
       <div className=" mx-auto text-center mb-12">
-        <h2 className="pb-3 text-3xl font-bold text-white relative inline-block">
-        Skills
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-yellow-400 to-purple-500 rounded-full"></div>
-        </h2>
+        <Title text='Skills' />
       </div>
 
       {/* Skill Categories */}
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
         {skills.map((category, index) => (
-          <div key={index} className="p-6 bg-gray-700 rounded-2xl">
+          <motion.div 
+            key={index} 
+            className="p-6 bg-gray-700 rounded-2xl"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            >
             <h3 className="text-2xl text-center text-white font-semibold mb-6">{category.category}</h3>
 
             {/* Skill Items */}
@@ -30,7 +36,7 @@ const SkillPage: React.FC = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

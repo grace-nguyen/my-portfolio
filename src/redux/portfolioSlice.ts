@@ -11,6 +11,18 @@ const initialState: PortfolioData = {
     professionalSummary: 'As a Software Engineer, I leverage my skills and practical experience to develop user-friendly and impactful software products. With over 8 years of experience as a Frontend Developer, I have honed my expertise in technologies such as HTML, CSS, JavaScript, React, Vue, and PHP. Currently, I am expanding my skill set to excel as a Full Stack Developer, delving into technologies like Node and ASP.NET Core. With a focus on continuous learning and improvement, I am passionate about contributing my expertise to challenging projects while further advancing my capabilities in software development.',
     employments: [
       {
+        company: 'Jung Talents',
+        position: 'Software Engineer',
+        duration: 'Dec 2023 – Present',
+        responsibilities: [
+          'Designed and developed interactive web applications, responsible for front-end development.',
+          'Engaged in the PTE Master and PTE Platform projects by using React.js, Next.js, Nest.js, Typescript, ASP.NET, MySQL and AWS. Primarily focused on elevating search functionalities and refining course recommendation systems, resulting in a more user-friendly and efficient platform.', 
+          'Engaged in the development of the new Carina Eye Care website (project is still in-progress) using ASP.NET Core, React.js, Next.js, and Storyblok.', 
+          'Ensured high code quality and streamlined team collaboration by utilizing Git for version control and AWS for seamless continuous integration and deployment.',
+          'Translated UI / UX designs wireframes from Figma into functional front-end code.'
+        ],
+      },
+      {
         company: 'CarePlus International Clinics',
         position: 'Software Engineer',
         duration: 'Jan 2024 – Sep 2024',

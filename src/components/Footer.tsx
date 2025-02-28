@@ -2,16 +2,14 @@ import React from 'react';
 import { FaEnvelope } from 'react-icons/fa';
 import { MdLocationOn, MdPhone } from 'react-icons/md';
 import Social from './Social';
+import Title from './Title';
 
 const Footer: React.FC = () => {
   return (
     <footer id="contacts" className=" text-white pt-24 py-16">
       <div className="container mx-auto px-4">
         <div className=" mx-auto text-center mb-12">
-          <h2 className="pb-3 text-3xl font-bold text-white relative inline-block">
-          Contact
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-yellow-400 to-purple-500 rounded-full"></div>
-          </h2>
+        <Title text='Contacts' />
         </div>
         <div className="grid grid-cols-1 gap-8">
           

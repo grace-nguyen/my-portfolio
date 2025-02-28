@@ -21,7 +21,7 @@ const Header: React.FC = () => {
           Portfolio
         </div>
 
-        {/* Desktop Menu - Ẩn trên mobile */}
+        {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <ul className="hidden md:flex space-x-6 lg:space-x-8">
             {['About', 'Experience', 'Skills', 'Education', 'Contacts'].map((item) => (
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
           {/* Desktop CV Button */}
           <a
-            href="https://drive.google.com/file/d/1zyb3nFSSLKWh8WihMZ3jWuXHsXeCJDmN/view"
+            href="https://drive.google.com/file/d/1jMwB_vTCHXBfNebeff2kDZiCph_Q-TjY/view"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center bg-gradient-to-r from-purple-500 to-yellow-500 text-white font-semibold py-2 px-4 rounded"
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
           </a>
         </div>
 
-        {/* Mobile Menu Button - Hiển thị trên mobile */}
+        {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsSidebarOpen(true)}
           className="md:hidden text-white p-2 rounded-lg bg-transparent"
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
 
         <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-800">
           <a
-            href="https://drive.google.com/file/d/1zyb3nFSSLKWh8WihMZ3jWuXHsXeCJDmN/view"
+            href="https://drive.google.com/file/d/1jMwB_vTCHXBfNebeff2kDZiCph_Q-TjY/view"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-yellow-500 text-white font-semibold py-2 px-4 rounded"
