@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             <ul>
               <li className="flex items-center mb-4">
                 <MdLocationOn className="text-yellow-400 mr-2" />
-                <span>Geelong, Vic, Australia</span>
+                <span>Victoria, Australia</span>
               </li>
               <li className="flex items-center mb-4">
                 <MdPhone className="text-yellow-400 mr-2" />

@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
           {/* Desktop CV Button */}
           <a
-            href="https://drive.google.com/file/d/1jMwB_vTCHXBfNebeff2kDZiCph_Q-TjY/view"
+            href="https://drive.google.com/file/d/1zJYq0MWXgjV44OWqxdXc3me9awSrEzgJ/view"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center bg-gradient-to-r from-purple-500 to-yellow-500 text-white font-semibold py-2 px-4 rounded"
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
 
         <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-800">
           <a
-            href="https://drive.google.com/file/d/1jMwB_vTCHXBfNebeff2kDZiCph_Q-TjY/view"
+            href="https://drive.google.com/file/d/1zJYq0MWXgjV44OWqxdXc3me9awSrEzgJ/view"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-yellow-500 text-white font-semibold py-2 px-4 rounded"
