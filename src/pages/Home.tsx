@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
+import CareerBreak from '../components/CareerBreak';
 import ScrollToTop from '../components/ScrollToTop';
-const Home:React.FC=()=> <div className="min-h-screen bg-gray-900 text-white"><Header/><main className="container mx-auto px-4 pt-16"><About/><Skills/><Projects/><Employment/><Education/><Certificates/></main><Footer/><ScrollToTop/></div>;
+const Home:React.FC=()=> <div className="min-h-screen bg-gray-900 text-white"><Header/><main className="container mx-auto px-4 pt-16"><About/><Skills/><Projects/><Employment/><CareerBreak/><Education/><Certificates/></main><Footer/><ScrollToTop/></div>;
 export default Home;
