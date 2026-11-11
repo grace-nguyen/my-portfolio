@@ -1,14 +1,43 @@
-# Portfolio - React + TypeScript + Redux + Vite + Tailwind
+# Grace Nguyen — Software Engineer Portfolio
 
-## Introduction
+Personal portfolio website for **Grace Nguyen**, a Software Engineer based in Victoria, Australia.
 
-This is a portfolio project built with **React**, **TypeScript**, **Redux**, **Vite**, and **Tailwind CSS**. The project showcases personal information, skills, work experience, and projects. It's easy to customize and extend with additional features as needed.
+🌐 **Live portfolio:** https://gracenguyen-psi.vercel.app/
 
-## Technologies Used
+## Overview
 
-- **React**: A popular JavaScript library for building user interfaces.
-- **TypeScript**: A superset of JavaScript that provides static type checking.
-- **Redux**: A library for state management in React applications.
-- **Vite**: A fast and lightweight build tool for modern web applications.
-- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+This site presents my professional experience, technical skills, education, certificates and selected personal projects. It is designed to help engineering teams quickly understand my frontend and full-stack development background.
 
+## Tech stack
+
+- React 18 and TypeScript
+- Vite
+- Redux Toolkit and React Redux
+- Tailwind CSS
+- Framer Motion
+- React Router
+
+## Featured projects
+
+- **SmartParking Systems** — personal project in progress using C#, ASP.NET Core 8, Next.js and TypeScript.
+- **ConOi** — e-commerce / print-on-demand project using WordPress and WooCommerce.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Quality checks
+
+```bash
+npm run lint
+npm run build
+```
+
+## Contact
+
+- Email: grace.nnguyen1911@gmail.com
+- LinkedIn: https://www.linkedin.com/in/gracenguyen1911/
+- GitHub: https://github.com/grace-nguyen
