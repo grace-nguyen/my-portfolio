@@ -24,10 +24,10 @@ const Header: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <ul className="hidden md:flex space-x-6 lg:space-x-8">
-            {['About', 'Experience', 'Skills', 'Education', 'Contacts'].map((item) => (
+            {['About', 'Skills', 'Projects', 'Experience', 'Education', 'Certificates', 'Contacts'].map((item) => (
               <li
                 key={item}
-                className="cursor-pointer text-white hover:text-purple-400 transition-colors"
+                className="cursor-pointer text-sm text-white hover:text-purple-400 transition-colors"
                 onClick={() => handleScrollToSection(item.toLowerCase())}
               >
                 {item}
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
           onClick={() => setIsSidebarOpen(true)}
           className="md:hidden text-white p-2 rounded-lg bg-transparent"
         >
-          <FaBars size={24} />
+          <FaBars size={24} aria-hidden="true" />
         </button>
       </nav>
 
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
             onClick={() => setIsSidebarOpen(false)}
             className="text-white p-2"
           >
-            <FaTimes size={20} />
+            <FaTimes size={20} aria-hidden="true" />
           </button>
         </div>
 
