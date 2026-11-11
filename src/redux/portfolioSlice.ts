@@ -3,23 +3,32 @@ import { PortfolioData } from '../types';
 
 const initialState: PortfolioData = {
     name: 'Thi Nga (Grace) Nguyen',
-    email: 'grace.mnguyen1911@gmail.com',
+    email: 'grace.nnguyen1911@gmail.com',
     phone: '(+61) 477-691-885',
-    linkedin: 'your-linkedin-username',
-    github: 'your-github-username',
+    linkedin: 'https://www.linkedin.com/in/gracenguyen1911/',
+    github: 'https://github.com/grace-nguyen',
     portfolio: 'Portfolio',
-    professionalSummary: 'As a Software Engineer, I leverage my skills and practical experience to develop user-friendly and impactful software products. With over 8 years of experience as a Frontend Developer, I have honed my expertise in technologies such as HTML, CSS, JavaScript, React, Vue, and PHP. Currently, I am expanding my skill set to excel as a Full Stack Developer, delving into technologies like Node and ASP.NET Core. With a focus on continuous learning and improvement, I am passionate about contributing my expertise to challenging projects while further advancing my capabilities in software development.',
+    professionalSummary: 'Software Engineer specialising in responsive, user-friendly web applications with React, Next.js and TypeScript, complemented by backend experience in C#, ASP.NET Core and Node.js. Experienced in reusable UI components, REST and GraphQL API integration, automated testing and cross-functional collaboration. Based in Victoria, Australia, with permanent residency and unrestricted working rights. Open to full-time software engineering opportunities.',
     employments: [
       {
         company: 'Jung Talents',
-        position: 'Software Engineer',
-        duration: 'Dec 2023 – Present',
+        position: 'Software Engineer (Contract / Project-based)',
+        duration: 'Jan 2025 – Sep 2025',
         responsibilities: [
           'Designed and developed interactive web applications, responsible for front-end development.',
           'Engaged in the PTE Master and PTE Platform projects by using React.js, Next.js, Nest.js, Typescript, ASP.NET, MySQL and AWS. Primarily focused on elevating search functionalities and refining course recommendation systems, resulting in a more user-friendly and efficient platform.', 
           'Engaged in the development of the new Carina Eye Care website (project is still in-progress) using ASP.NET Core, React.js, Next.js, and Storyblok.', 
           'Ensured high code quality and streamlined team collaboration by utilizing Git for version control and AWS for seamless continuous integration and deployment.',
           'Translated UI / UX designs wireframes from Figma into functional front-end code.'
+        ],
+      },
+      {
+        company: 'Career Break – Family Care',
+        position: 'Family Care & Professional Development',
+        duration: 'Oct 2025 – Present',
+        responsibilities: [
+          'Taking a planned career break to focus on family and childcare responsibilities.',
+          'Maintaining and developing technical skills through hands-on learning and personal software projects, including C#, ASP.NET Core and Next.js.'
         ],
       },
       {
@@ -47,7 +56,7 @@ const initialState: PortfolioData = {
       {
         company: 'VietSwiss',
         position: 'Software Engineer',
-        duration: 'Aug 2021 – April 2022',
+        duration: 'Oct 2021 – Apr 2022',
         responsibilities: [
           'Developed and maintained e-commerce, news, and personal websites for European clients using WordPress, React, Next.js, TypeScript, JavaScript, and Node.js.', 
           'Implemented feature updates and bug fixes based on client requirements. Optimized and tested website performance to ensure speed and efficiency before deployment.', 
@@ -58,7 +67,7 @@ const initialState: PortfolioData = {
       {
         company: 'OLLI Technology',
         position: 'Software Engineer',
-        duration: 'Jun 2018 – Aug 2021',
+        duration: 'Jul 2018 – Sep 2021',
         responsibilities: [
           'Developed the company’s official website on the Haravan platform (similar to Shopify).', 
           'Built internal web applications for the content and AI teams using VueJS, JavaScript, and TypeScript to streamline workflows.', 
@@ -84,7 +93,7 @@ const initialState: PortfolioData = {
       {
         company: 'Youtech JSC',
         position: 'Software Engineer',
-        duration: 'Sep 2013 – Dec 2015',
+        duration: 'Jan 2014 – Dec 2015',
         responsibilities: [
           'Developed demo templates for sale on theme marketplaces using Joomla, WordPress, OpenCart, PrestaShop, and Shopify.',
           'Worked with the backend team to integrate modules into themes, ensuring accurate implementation of designs.', 
@@ -100,37 +109,56 @@ const initialState: PortfolioData = {
       {
         category: 'Programming Languages',
         items: [
-          { name: 'React Js', icon: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
-          { name: 'Vue Js', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg' },
-          { name: 'HTML', icon: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png' },
-          { name: 'CSS', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png' },
-          { name: 'JavaScript', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png' },
-          { name: 'TypeScript', icon: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg' },
-          { name: 'Bootstrap', icon: 'https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png' },
-          { name: 'Tailwind', icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg' },
-          { name: 'PHP', icon: 'https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg' },
-          { name: 'C#', icon: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg' },
-          { name: 'ASP.NET Core', icon: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg' },
+          { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+          { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+          { name: 'C#', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
+          { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
+          { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
         ],
       },
       {
-        category: 'CMS Open Source',
+        category: 'Frontend',
         items: [
-          { name: 'Wordpress', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg' },
-          { name: 'Shopify', icon: 'https://cdn.iconscout.com/icon/free/png-256/free-shopify-logo-icon-download-in-svg-png-gif-file-formats--online-shopping-brand-logos-pack-icons-226579.png?f=webp&w=256' },
-          { name: 'Joomla', icon: 'https://cdn.iconscout.com/icon/free/png-256/free-joomla-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-4-pack-logos-icons-2945022.png?f=webp&w=256' },
-          { name: 'Prestashop', icon: 'https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/2983d43b-d217-4a43-ac43-93162c4c9b1a.jpeg?w=80&h=80&fit=max&dpr=3&auto=format&q=50' },
-          { name: 'OpenCart', icon: 'https://upload.wikimedia.org/wikipedia/commons/1/1a/OpenCart_icon.svg' },
+          { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+          { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+          { name: 'Vue.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
+          { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+          { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+          { name: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
         ],
       },
       {
-        category: 'Others',
+        category: 'Backend & APIs',
         items: [
-          { name: 'Git', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7Iq_jqc59J_Zrv7Jo29uBTTs8CD6O7JCvjpGmErDng&s' },
-          { name: 'GitHub', icon: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
-          { name: 'Postman', icon: 'https://cdn.worldvectorlogo.com/logos/postman.svg' },
-          { name: 'Slack', icon: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png' },
-          { name: 'Figma', icon: 'https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&h=804&q=75&fit=max&auto=format' },
+          { name: 'ASP.NET Core', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg' },
+          { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+          { name: 'NestJS', icon: 'https://nestjs.com/logo-small-gradient.d792062c.svg' },
+          { name: 'REST API', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg' },
+          { name: 'GraphQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg' },
+        ],
+      },
+      {
+        category: 'Database, Testing & Tools',
+        items: [
+          { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+          { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+          { name: 'Playwright', icon: 'https://playwright.dev/img/playwright-logo.svg' },
+          { name: 'Storybook', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg' },
+          { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+          { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+          { name: 'AWS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg' },
+          { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg' },
+          { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+        ],
+      },
+      {
+        category: 'CMS & E-commerce',
+        items: [
+          { name: 'WordPress', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg' },
+          { name: 'Shopify', icon: 'https://cdn.simpleicons.org/shopify/96BF48' },
+          { name: 'Joomla', icon: 'https://cdn.simpleicons.org/joomla/5091CD' },
+          { name: 'OpenCart', icon: 'https://cdn.simpleicons.org/opencart/23A8E0' },
+          { name: 'PrestaShop', icon: 'https://cdn.simpleicons.org/prestashop/DF0067' },
         ],
       },
     ],
