@@ -23,15 +23,6 @@ const initialState: PortfolioData = {
         ],
       },
       {
-        company: 'Career Break – Family Care',
-        position: 'Family Care & Professional Development',
-        duration: 'Oct 2025 – Present',
-        responsibilities: [
-          'Taking a planned career break to focus on family and childcare responsibilities.',
-          'Maintaining and developing technical skills through hands-on learning and personal software projects, including C#, ASP.NET Core and Next.js.'
-        ],
-      },
-      {
         company: 'CarePlus International Clinics',
         position: 'Software Engineer',
         duration: 'Jan 2024 – Sep 2024',
