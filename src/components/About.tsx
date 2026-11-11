@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
 import Social from './Social';
 import { motion } from 'framer-motion';
+import { FaArrowDown } from 'react-icons/fa';
 
 const About: React.FC = () => {
   const portfolio = useSelector((state: RootState) => state.portfolio);
@@ -41,8 +42,13 @@ const About: React.FC = () => {
           <div className="flex justify-center md:justify-start">
             <Social />
           </div>
-          <a href="mailto:grace.nnguyen1911@gmail.com" className="mt-6 inline-flex rounded-lg bg-gradient-to-r from-purple-500 to-fuchsia-500 px-5 py-3 font-semibold text-white transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-purple-300">
-            Get in touch
+          <a
+            href="#skills"
+            aria-label="Scroll down to explore my skills and portfolio"
+            title="Explore more"
+            className="mt-8 inline-flex h-12 w-12 items-center justify-center rounded-full border border-purple-400/60 bg-purple-500/15 text-purple-200 shadow-lg shadow-purple-950/20 transition hover:-translate-y-1 hover:border-purple-300 hover:bg-purple-500/30 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300"
+          >
+            <FaArrowDown size={20} aria-hidden="true" />
           </a>
         </motion.div>
       </div>
