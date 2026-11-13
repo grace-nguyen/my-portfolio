@@ -1,18 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Title from './Title';
+import coioiThumb from '../assets/img/conoi_thumb.jpeg';
 
 const projects = [
   {
     name: 'SmartParking Systems',
-    status: 'In progress',
+    link: '#',
+    image: '',
+    status: ['In progress','Personal project'],
     description: 'A personal full-stack parking management project focused on vehicle tracking, parking fee calculation and maintainable API design.',
     technologies: ['C#', 'ASP.NET Core 8', 'REST API', 'Next.js', 'TypeScript', 'Swagger'],
     highlights: ['Layered architecture with Controllers, Services, Models and DTOs', 'Dependency Injection and input validation', 'Dynamic parking fee calculation and multi-vehicle tracking'],
   },
   {
     name: 'ConOi',
-    status: 'Personal e-commerce project',
+    link: 'https://conoi.com.au',
+    image: coioiThumb,
+    status: ['In progress','Personal project'],
     description: 'An e-commerce and print-on-demand project built with WordPress and WooCommerce.',
     technologies: ['WordPress', 'WooCommerce', 'PHP', 'E-commerce', 'SEO'],
     highlights: ['Product catalogue and online store management', 'Payment gateway and order fulfilment workflows', 'Responsive website experience and SEO improvements'],
@@ -20,7 +25,7 @@ const projects = [
 ];
 
 const Projects: React.FC = () => (
-  <section id="projects" className="scroll-mt-24 py-16">
+  <section id="projects" className="scroll-pt-24 py-16">
     <div className="mb-12 text-center"><Title text="Featured Projects" /></div>
     <div className="container mx-auto grid grid-cols-1 gap-6 lg:grid-cols-2">
       {projects.map((project, index) => (
@@ -32,9 +37,29 @@ const Projects: React.FC = () => (
           transition={{ duration: 0.45, delay: index * 0.12 }}
           viewport={{ once: true }}
         >
+          <div className="relative h-48 w-full overflow-hidden border-b border-gray-700/50 bg-gray-900 sm:h-56">
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <img
+                src={project.image}
+                alt={project.name}
+                className="h-full w-full object-cover object-top transition duration-500 hover:scale-105"
+              />
+            </a>
+          </div>
           <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-            <h3 className="text-xl font-bold text-white md:text-2xl">{project.name}</h3>
-            <span className="rounded-full border border-purple-400/40 bg-purple-500/10 px-3 py-1 text-xs font-medium text-purple-200">{project.status}</span>
+            <h3 className="text-xl font-bold text-white md:text-2xl">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white transition-colors hover:text-purple-300"
+              >
+                {project.name}
+              </a>
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {project.status.map((item) => <span key={item} className="rounded-full border border-purple-400/40 bg-purple-500/10 px-3 py-1 text-xs font-medium text-purple-200">{item}</span>)}
+            </div>
           </div>
           <p className="mb-5 leading-7 text-gray-300">{project.description}</p>
           <h4 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-200">Key features</h4>

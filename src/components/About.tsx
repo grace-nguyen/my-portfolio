@@ -9,8 +9,8 @@ const About: React.FC = () => {
   const portfolio = useSelector((state: RootState) => state.portfolio);
 
   return (
-    <section id="about" className="scroll-mt-24 py-20 md:py-28">
-      <div className="container mx-auto flex flex-col items-center gap-10 md:flex-row md:gap-14">
+    <section id="about" className="scroll-pt-24 py-16 md:py-28">
+      <div className="container mx-auto flex flex-col items-center gap-10 md:flex-row md:gap-14 py-20">
         <motion.div
           className="flex w-full justify-center md:w-1/3"
           initial={{ opacity: 0, x: -30 }}
@@ -43,7 +43,7 @@ const About: React.FC = () => {
             <Social />
           </div>
           <a
-            href="#skills"
+            href="#experience"
             aria-label="Scroll down to explore my skills and portfolio"
             title="Explore more"
             className="mt-8 inline-flex h-12 w-12 items-center justify-center rounded-full border border-purple-400/60 bg-purple-500/15 text-purple-200 shadow-lg shadow-purple-950/20 transition hover:-translate-y-1 hover:border-purple-300 hover:bg-purple-500/30 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300"

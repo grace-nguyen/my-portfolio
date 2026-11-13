@@ -1,5 +1,92 @@
-import React,{useState} from 'react';
-import {FaBars,FaDownload,FaTimes} from 'react-icons/fa';
-const navItems=['About','Skills','Projects','Experience','Education','Certificates','Contacts'];
-const Header:React.FC=()=>{const[open,setOpen]=useState(false);const scrollTo=(id:string)=>{document.getElementById(id.toLowerCase())?.scrollIntoView({behavior:'smooth'});setOpen(false)};const cv='https://drive.google.com/file/d/1zJYq0MWXgjV44OWqxdXc3me9awSrEzgJ/view';return <header className="fixed left-0 top-0 z-50 w-full border-b border-gray-800 bg-gray-900/95 px-4 py-3 shadow-md backdrop-blur"><nav className="container mx-auto flex items-center justify-between"><a href="#about" onClick={e=>{e.preventDefault();scrollTo('about')}} className="bg-gradient-to-r from-purple-300 to-yellow-300 bg-clip-text text-xl font-bold text-transparent">Grace Nguyen</a><div className="hidden items-center gap-6 md:flex">{navItems.map(item=><button type="button" key={item} onClick={()=>scrollTo(item)} className="bg-transparent p-0 text-sm text-white transition hover:text-purple-300">{item}</button>)}<a href={cv} target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded bg-gradient-to-r from-purple-500 to-yellow-500 px-3 py-2 text-sm font-semibold text-white"><FaDownload className="mr-2"/>Download CV</a></div><button type="button" aria-label={open?'Close navigation menu':'Open navigation menu'} aria-expanded={open} onClick={()=>setOpen(v=>!v)} className="rounded bg-transparent p-2 text-white md:hidden">{open?<FaTimes size={22}/>:<FaBars size={22}/>}</button></nav>{open&&<div className="container mx-auto flex flex-col gap-3 border-t border-gray-800 py-4 md:hidden">{navItems.map(item=><button type="button" key={item} onClick={()=>scrollTo(item)} className="bg-transparent p-2 text-left text-white hover:text-purple-300">{item}</button>)}<a href={cv} target="_blank" rel="noopener noreferrer" className="rounded bg-gradient-to-r from-purple-500 to-yellow-500 px-4 py-2 text-center font-semibold text-white"><FaDownload className="mr-2 inline"/>Download CV</a></div>}</header>};
+import React, { useState } from "react";
+import { FaBars, FaDownload, FaTimes } from "react-icons/fa";
+const navItems = [
+  "About",
+  "Experience",
+  "Skills",
+  "Projects",
+  "Education",
+  "Certificates",
+  "Contacts",
+];
+const Header: React.FC = () => {
+  const [open, setOpen] = useState(false);
+  const scrollTo = (id: string) => {
+    document
+      .getElementById(id.toLowerCase())
+      ?.scrollIntoView({ behavior: "smooth" });
+    setOpen(false);
+  };
+  const cvLink =
+    "https://drive.google.com/file/d/1zJYq0MWXgjV44OWqxdXc3me9awSrEzgJ/view";
+  return (
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-gray-800 bg-gray-900/95 px-4 py-3 shadow-md backdrop-blur">
+      <nav className="container mx-auto flex items-center justify-between">
+        <a
+          href="#about"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollTo("about");
+          }}
+          className="bg-gradient-to-r from-purple-300 to-yellow-300 bg-clip-text text-xl font-bold text-transparent"
+        >
+          Grace Nguyen
+        </a>
+        <div className="hidden items-center gap-6 md:flex">
+          {navItems.map((item) => (
+            <button
+              type="button"
+              key={item}
+              onClick={() => scrollTo(item)}
+              className="bg-transparent p-0 text-sm text-white transition hover:text-purple-300"
+            >
+              {item}
+            </button>
+          ))}
+          <a
+            href={cvLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center rounded bg-gradient-to-r from-purple-500 to-yellow-500 px-3 py-2 text-sm font-semibold text-white"
+          >
+            <FaDownload className="mr-2" />
+            Download CV
+          </a>
+        </div>
+        <button
+          type="button"
+          aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+          className="rounded bg-transparent p-2 text-white md:hidden"
+        >
+          {open ? <FaTimes size={22} /> : <FaBars size={22} />}
+        </button>
+      </nav>
+      {open && (
+        <div className="container mx-auto flex flex-col gap-3 border-t border-gray-800 py-4 md:hidden">
+          {navItems.map((item) => (
+            <button
+              type="button"
+              key={item}
+              onClick={() => scrollTo(item)}
+              className="bg-transparent p-2 text-left text-white hover:text-purple-300"
+            >
+              {item}
+            </button>
+          ))}
+          <a
+            href={cvLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded bg-gradient-to-r from-purple-500 to-yellow-500 px-4 py-2 text-center font-semibold text-white"
+          >
+            <FaDownload className="mr-2 inline" />
+            Download CV
+          </a>
+        </div>
+      )}
+    </header>
+  );
+};
 export default Header;

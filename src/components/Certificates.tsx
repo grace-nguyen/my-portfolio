@@ -1,6 +1,50 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { RootState } from '../redux/store';
-import { motion } from 'framer-motion';
-import Title from './Title';
-const Certificates:React.FC=()=>{const certificates=useSelector((state:RootState)=>state.portfolio.certificates);return <section id="certificates" className="scroll-mt-24 py-16"><div className="mx-auto mb-10 text-center"><Title text="Certificates"/></div><div className="container mx-auto mt-10 grid grid-cols-1 gap-6">{certificates.map(c=><motion.article key={c.title} className="rounded-2xl border border-gray-700 bg-gray-800/90 p-5" initial={{opacity:0,y:24}} whileInView={{opacity:1,y:0}} transition={{duration:.4}} viewport={{once:true}}><h3 className="text-lg font-semibold md:text-xl"><a href={c.linkTitle} target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-purple-200">{c.title}</a></h3><p className="mt-1 text-sm text-gray-400">{c.date}</p><ul className="mt-3 space-y-2 text-sm leading-6 text-gray-300">{c.responsibilities.map(item=><li key={item} className="flex gap-2"><span className="text-yellow-400">•</span><span>{item}</span></li>)}</ul></motion.article>)}</div></section>};export default Certificates;
+import React from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../redux/store";
+import { motion } from "framer-motion";
+import Title from "./Title";
+const Certificates: React.FC = () => {
+  const certificates = useSelector(
+    (state: RootState) => state.portfolio.certificates
+  );
+  return (
+    <section id="certificates" className="scroll-pt-24 py-16">
+      <div className="mx-auto mb-10 text-center">
+        <Title text="Certificates" />
+      </div>
+      <div className="container mx-auto mt-10 grid grid-cols-1 gap-6">
+        {certificates.map((c) => (
+          <motion.article
+            key={c.title}
+            className="rounded-2xl border border-gray-700 bg-gray-800/90 p-5"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-lg font-semibold md:text-xl">
+              <a
+                href={c.linkTitle}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-300 hover:text-purple-200"
+              >
+                {c.title}
+              </a>
+            </h3>
+            <p className="mt-1 text-sm text-gray-400">{c.date}</p>
+            <ul className="mt-3 space-y-2 text-sm leading-6 text-gray-300">
+              {c.responsibilities.map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span className="text-yellow-400">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.article>
+        ))}
+      </div>
+    </section>
+  );
+};
+export default Certificates;
