@@ -1,46 +1,53 @@
-import React from 'react';
-import { FaEnvelope } from 'react-icons/fa';
-import { MdLocationOn, MdPhone } from 'react-icons/md';
-import Social from './Social';
-import Title from './Title';
+import React from "react";
+import { FaEnvelope } from "react-icons/fa";
+import { MdLocationOn, MdPhone } from "react-icons/md";
+import Social from "./Social";
+import Title from "./Title";
 
-const Footer: React.FC = () => {
-  return (
-    <footer id="contacts" className=" text-white pt-24 py-16">
-      <div className="container mx-auto px-4">
-        <div className=" mx-auto text-center mb-12">
-        <Title text='Contacts' />
-        </div>
-        <div className="grid grid-cols-1 gap-8">
-          
-          {/* Contact Information */}
-          <div>
-            <ul>
-              <li className="flex items-center mb-4">
-                <MdLocationOn className="text-yellow-400 mr-2" />
-                <span>Victoria, Australia</span>
-              </li>
-              <li className="flex items-center mb-4">
-                <MdPhone className="text-yellow-400 mr-2" />
-                <span>0477 691 885</span>
-              </li>
-              <li className="flex items-center">
-                <FaEnvelope className="text-yellow-400 mr-2" />
-                <span>grace.nnguyen1911@gmail.com</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Social Links */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-4">Follow Me</h3>
-            <Social />
-          </div>
-
-        </div>
+const Footer: React.FC = () => (
+  <footer
+    id="contacts"
+    className="scroll-mt-24 border-t border-gray-800 py-16 text-white"
+  >
+    <div className="container mx-auto px-4">
+      <div className="mx-auto mb-8 text-center">
+        <Title text="Contact" />
       </div>
-    </footer>
-  );
-};
+      <p className="mb-8 text-center text-gray-300">
+        Interested in working together? I would love to hear from you.
+      </p>
+
+      <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-8 text-gray-300">
+        <div className="flex items-center gap-2">
+          <MdLocationOn className="text-yellow-400 text-lg shrink-0" />
+          <span>Victoria, Australia</span>
+        </div>
+        
+        <a
+          href="tel:+61477691885"
+          className="flex items-center gap-2 hover:text-purple-300 transition-colors"
+        >
+          <MdPhone className="text-yellow-400 text-lg shrink-0" />
+          <span>0477 691 885</span>
+        </a>
+
+        <a
+          href="mailto:grace.nnguyen1911@gmail.com"
+          className="flex items-center gap-2 hover:text-purple-300 transition-colors"
+        >
+          <FaEnvelope className="text-yellow-400 text-lg shrink-0" />
+          <span className="whitespace-nowrap">grace.nnguyen1911@gmail.com</span>
+        </a>
+      </div>
+
+      <div className="mt-8 flex justify-center">
+        <Social />
+      </div>
+      <p className="mt-10 text-center text-xs text-gray-500">
+        © {new Date().getFullYear()} Grace Nguyen
+      </p>
+    </div>
+  </footer>
+);
 
 export default Footer;

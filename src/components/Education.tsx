@@ -8,7 +8,7 @@ const Education: React.FC = () => {
   const educations = useSelector((state: RootState) => state.portfolio.education);
 
   return (
-    <section id="education" className="pt-24 py-16 ">
+    <section id="education" className="scroll-pt-24 py-16 ">
       {/* Header */}
       <div className=" mx-auto text-center mb-12">
       <Title text='Education' />
